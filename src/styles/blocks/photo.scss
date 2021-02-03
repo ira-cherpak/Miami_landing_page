@@ -5,12 +5,17 @@
   gap: 0 20px;
 
   &__img {
-    display: block;
     height: 256px;
 
     object-fit: cover;
     border-radius: 8px;
     overflow: hidden;
+
+    transition: 1s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
 
     @include onMobile {
       height: 131px;
